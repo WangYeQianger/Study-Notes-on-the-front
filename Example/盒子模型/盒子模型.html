@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #box{
+            width: 260px;
+            height: 460px;
+            /* background-color: yellow; */
+            margin: 0 auto;
+            padding: 20px;
+        }
+        img{
+            display: block;
+        }
+        .title{
+            border-left: solid 5px aqua;
+            margin-bottom: 30px;
+        }
+        .title p{
+            font-size: large;
+            font-weight: 800;
+            color: deeppink;
+        }
+        .big{
+            width: 260px;
+            height: 230px;
+        }
+        .big p{
+            font-weight: 800;
+            text-align: center;
+            background-color: #f6f7f8;
+        }
+        .small1{
+            float: left;
+        }
+        .small2{
+            float: right;
+        }
+        .small1,.small2 p{
+            font-weight: 800;
+            text-align: center;
+            background-color: #f6f7f8;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div class="title">
+            <p>&emsp;王业强照片</p>
+        </div>
+        <div class="big">
+            <img src="img/big.png">
+            <p>这B居然在学习？？？？</p>
+        </div>
+        <div class="small1">
+            <img src="img/small1.png" alt="">
+            <p>照骗①</p>
+        </div>
+        <div class="small2">
+            <img src="img/small2.png" alt="">
+            <p>照骗②</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>二级菜单</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 300px;
+            margin: 50px auto;
+        }
+        ul{   /*所有ul都没前面的符号*/
+            list-style: none;
+        }
+
+        .box .item{
+            float: left;
+            text-align: center;
+            width: 148px;
+            background-color: blue;
+            border: 1px solid blue;
+            color: aliceblue;
+            line-height: 40px;
+        }
+        .item:hover{
+            background-color: aqua;
+            color: black;
+            font-weight: 800;
+        }
+        .item>ul{   /*item的亲儿子 ul */
+            display: none;
+            color: black;
+            background-color: white;
+        }
+
+        .item:hover ul{
+            display: block;
+        }
+        
+        .item ul>li:hover{
+            background-color: blanchedalmond;
+        }
+
+        .triangle{
+            width: 0;
+            height: 0;
+            display: inline-block;
+            border: 5px solid transparent;
+            /* 或者用 rgba(0,0,0,0) 调节透明度 */
+            border-top: 5px solid white;
+            margin-left: 10px;
+            position: relative;
+            top: 2.5px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="box">
+        <li class="item">王业强的爱好
+        <span class="triangle"></span>
+            <ul>
+                <li>打篮球</li>
+                <li>各种球类</li>
+                <li>桌游</li>
+                <li>唱歌</li>
+                <li>追剧</li>
+            </ul>
+        </li>
+        <li class="item ">最近该干的事儿
+        <span class="triangle"></span>
+            <ul>
+                <li>前端</li>
+                <li>b站人工智能</li>
+                <li>大物-甲</li>
+                <li>深度学习Book</li>
+                <li>追剧</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

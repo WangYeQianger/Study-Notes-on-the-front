@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>溢出案例</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #box{
+            width: 890px;
+            height: 290px;
+            background-color: yellow;
+            margin: 0 auto;
+            overflow-y: scroll;
+        }
+        .info{
+            width: 162px;
+            height: 112px;
+            border: 1px solid #808080;
+            float: left;
+            margin-right: 48px;
+            margin-bottom: 20px;
+        }
+        .info div{
+            width: 162px;
+            height: 84px;
+            background-color: #ccc;
+            font-size: 20px;
+        }
+        .info .price{
+            height: 42px;
+            line-height: 42px;
+            padding-left: 8px;
+            color: aliceblue;
+        }
+        .info .date{
+            color: aliceblue;
+            line-height: 42px;
+            padding-left: 8px;
+        }
+        .info .category{
+            background: white;
+            height: 28px;
+            line-height: 28px;
+            color: #000;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        /* 这是伪类选择器 */
+        .info:hover div{
+            background-color: aqua;
+        }
+        .info:hover .price,.date{
+            color: white;
+        } /*优先级不够，只能分开写*/
+        .info:hover .category{
+            color: aqua;
+            background-image: url(img/下标.png);
+            background-repeat: no-repeat;
+            background-position: right bottom;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div class="info">
+            <div >
+                <p class="price">5块2毛RMB</p>
+                <p class="date">有效期：forever</p>
+            </div>
+            <p class="category">[暖心类][业强类]</p>
+        </div>
+        <div class="info">
+            <div >
+                <p class="price">5块2毛RMB</p>
+                <p class="date">有效期：forever</p>
+            </div>
+            <p class="category">[暖心类][业强类]</p>
+        </div>
+        <div class="info">
+            <div >
+                <p class="price">5块2毛RMB</p>
+                <p class="date">有效期：forever</p>
+            </div>
+            <p class="category">[暖心类][业强类]</p>
+        </div>
+        <div class="info">
+            <div >
+                <p class="price">5块2毛RMB</p>
+                <p class="date">有效期：forever</p>
+            </div>
+            <p class="category">[暖心类][业强类]</p>
+        </div>
+        <div class="info">
+            <div >
+                <p class="price">5块2毛RMB</p>
+                <p class="date">有效期：forever</p>
+            </div>
+            <p class="category">[暖心类][业强类]</p>
+        </div>
+        <div class="info">
+            <div >
+                <p class="price">5块2毛RMB</p>
+                <p class="date">有效期：forever</p>
+            </div>
+            <p class="category">[暖心类][业强类]</p>
+        </div>
+        <div class="info">
+            <div >
+                <p class="price">5块2毛RMB</p>
+                <p class="date">有效期：forever</p>
+            </div>
+            <p class="category">[暖心类][业强类]</p>
+        </div>
+        <div class="info">
+            <div >
+                <p class="price">5块2毛RMB</p>
+                <p class="date">有效期：forever</p>
+            </div>
+            <p class="category">[暖心类][业强类]</p>
+        </div>
+        <div class="info">
+            <div >
+                <p class="price">5块2毛RMB</p>
+                <p class="date">有效期：forever</p>
+            </div>
+            <p class="category">[暖心类][业强类]</p>
+        </div>
+        <div class="info">
+            <div >
+                <p class="price">5块2毛RMB</p>
+                <p class="date">有效期：forever</p>
+            </div>
+            <p class="category">[暖心类][业强类]</p>
+        </div>
+        <div class="info">
+            <div >
+                <p class="price">5块2毛RMB</p>
+                <p class="date">有效期：forever</p>
+            </div>
+            <p class="category">[暖心类][业强类]</p>
+        </div>
+        <div class="info">
+            <div >
+                <p class="price">5块2毛RMB</p>
+                <p class="date">有效期：forever</p>
+            </div>
+            <p class="category">[暖心类][业强类]</p>
+        </div>
+        <div class="info">
+            <div >
+                <p class="price">5块2毛RMB</p>
+                <p class="date">有效期：forever</p>
+            </div>
+            <p class="category">[暖心类][业强类]</p>
+        </div>
+        <div class="info">
+            <div >
+                <p class="price">5块2毛RMB</p>
+                <p class="date">有效期：forever</p>
+            </div>
+            <p class="category">[暖心类][业强类]</p>
+        </div>
+
+    </div>
+</body>
+</html>
